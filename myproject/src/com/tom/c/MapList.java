@@ -8,21 +8,20 @@ public class MapList {
 
 	public static void main(String[] args) {
 		Random ran = new Random();
-		int [] value = new int[20];
-		List<Integer> list = new ArrayList<>();
+	
+		List<Integer> list = new ArrayList();
+		for(int i =0;i<20;i++) {
+			list.add(0);
+		}
 		for (int i=0;i<10000;i++) {
 			int p = ran.nextInt(20);
-			list.add(p);
-			
-			value[p]++;
+			Integer value = list.get(p);
+//			Integer value = list.get(0);
+			list.set(p, value+1);
 			
 		}
-			for(int i=0;i<value.length; i++) {
+		  System.out.println(list);
 				
-				System.out.println(i+":"+value[i]);
-		
-	}
-			
 	}
 
 }
