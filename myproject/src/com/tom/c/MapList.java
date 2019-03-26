@@ -16,7 +16,7 @@ public class MapList {
 		for (int i=0;i<10000;i++) {
 			int p = ran.nextInt(20);
 			Integer value = list.get(p);
-//			Integer value = list.get(0);
+
 			list.set(p, value+1);
 			
 		}
