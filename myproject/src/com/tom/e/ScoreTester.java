@@ -1,34 +1,24 @@
 package com.tom.e;
-	import java.util.Scanner;
-	public class ScoreTester {
-	public static void main(String[] args) {
 
-	 Scanner scanner = new Scanner(System.in);
-	    try {
-	    System.out.print("請輸入英文分數");
-	    String english = scanner.nextLine();
-	    int h= Integer.parseInt(english);
-	    if(h >100 || h < 0){
-	    	h= (Integer) null;
-	    }
-	    System.out.print("請輸入數學分數");
-	    String math = scanner.nextLine();
-	    int m = Integer.parseInt(math);
-	    if(m>100 || m< 0){
-	    	m= (Integer) null;
-	    }
-	    int average= (h + m)/2;
-		System.out.print("平均為"+ average);
-	     }catch(NumberFormatException e) {
-	      System.out.println("訊息格式錯誤");
-	     }catch(NullPointerException e) {
-	         System.out.println("訊息成績應為0~100");
-	     }
+import java.util.Scanner;
+
+public class ScoreTester {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			System.out.println("please enter English:");
+			Score english = new Score(scanner.nextLine());
+			System.out.println("please enter Math:");
+			Score math = new Score(scanner.nextLine());
+			System.out.println((english.value +  math.value)/2);
+		}catch (ScoreFormatException e) {
+			e.printStackTrace();
+		}catch ()
+		
+		
 	}
-	}
-	      
-	    //NullPointerException  當所需資料為null時拋出異常
-		//NumberFormatException 資料格式錯誤	
-		//ArithmeticException   用0做為除數使得結果產生異常
-		//h=h/0
-	
+}
+
+

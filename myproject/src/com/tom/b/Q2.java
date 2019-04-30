@@ -9,16 +9,16 @@ public class Q2 {
 
 	public static void main(String[] args) {
 		List<String>order = new ArrayList();
-		/*©I¥s«È¤H¨úÀ\¥i­«½Æ¥s¸¹*/
-		order.add("1¸¹½Ğ¨úÀ\");
-		order.add("2¸¹½Ğ¨úÀ\");
-		order.add("3¸¹½Ğ¨úÀ\");
-		order.add("2¸¹½Ğ¨úÀ\");
-		order.add("2¸¹½Ğ¨úÀ\");
+		/*å‘¼å«å®¢äººå–é¤å¯é‡è¤‡å«è™Ÿ*/
+		order.add("1è™Ÿè«‹å–é¤");
+		order.add("2è™Ÿè«‹å–é¤");
+		order.add("3è™Ÿè«‹å–é¤");
+		order.add("2è™Ÿè«‹å–é¤");
+		order.add("2è™Ÿè«‹å–é¤");
 		System.out.println(order);
 		
 		Set<Integer>lotto = new HashSet<>();
-		/*¼Ö³z¸¹½X¤£¥i­«½Æ*/
+		/*æ¨‚é€è™Ÿç¢¼ä¸å¯é‡è¤‡*/
 		lotto.add(2);
 		lotto.add(6);
 		lotto.add(25);
