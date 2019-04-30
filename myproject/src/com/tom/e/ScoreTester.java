@@ -15,7 +15,7 @@ public class ScoreTester {
 			System.out.println((english.value +  math.value)/2);
 		}catch (ScoreFormatException e) {
 			e.printStackTrace();
-		}catch ()
+		}
 		
 		
 	}
