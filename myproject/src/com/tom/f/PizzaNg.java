@@ -2,7 +2,7 @@ package com.tom.f;
 
 import java.util.Scanner;
 
-public class Pizza {
+public class PizzaNg {
 
 	public static void main(String[] args) {
 		 Scanner scanner = new Scanner(System.in);
