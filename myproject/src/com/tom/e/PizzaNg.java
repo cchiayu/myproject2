@@ -1,4 +1,4 @@
-package com.tom.f;
+package com.tom.e;
 
 import java.util.Scanner;
 
