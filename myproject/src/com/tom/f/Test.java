@@ -1,13 +1,11 @@
 package com.tom.f;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 public class Test {
 
 	public static void main(String[] args) {
-		File dir = new File("C:\\AppServ");
+		File dir = new File("C:\\AppServ");//學校資料夾的路徑
 		if (dir.exists() && dir.isDirectory()) {
 			File[]files = dir.listFiles();
 			//String[] files = dir.list();//列出資料夾內的全部檔案
@@ -22,8 +20,6 @@ public class Test {
 			
 		}
 }
-
-
 
 	/*	//FileReader fr = new FileReader("aa.txt");
 		File file = new File("aa.txt");
