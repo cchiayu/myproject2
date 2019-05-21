@@ -21,9 +21,7 @@ public class Sales {
 					System.out.println(tokens[0] + "/" + tokens[1]);
 					int n = Integer.parseInt(tokens[1]);
 				}
-				
-				line = in.readLine();
-						
+				line = in.readLine();	
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
