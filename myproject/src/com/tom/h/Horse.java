@@ -9,10 +9,11 @@ public class Horse extends Thread{
 			for (int i = 1; i <=50 ; i++) {
 			StringBuilder spaces = new StringBuilder();
 			for (int j =1 ; j<=i;j++) {
-				spaces.append(" ");
+				spaces.append("  ");
 			}
 			System.out.println (getName() + spaces.toString() +i);
 			super.run();
+			
 		}
 		
 	}
