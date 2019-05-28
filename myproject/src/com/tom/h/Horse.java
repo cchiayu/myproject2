@@ -6,8 +6,12 @@ public class Horse extends Thread{
 	}
 	@Override
 	public void run() {
-		for (int i = 1; i <=1000 ; i++) {
-			System.out.println (getName() + i);
+			for (int i = 1; i <=50 ; i++) {
+			StringBuilder spaces = new StringBuilder();
+			for (int j =1 ; j<=i;j++) {
+				spaces.append(" ");
+			}
+			System.out.println (getName() + spaces.toString() +i);
 			super.run();
 		}
 		
